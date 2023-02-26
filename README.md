@@ -1,5 +1,5 @@
 # Python Socket Server #
-This is a Python socket server which connects to a MetaTrader 5 client. The server in itself is nothing different than a normal TCP socket server but the assossiated methodes are designed for a typical use case in algotrading. 
+This is a Python socket server which connects to a MetaTrader 5 client. The server in itself is nothing different than a normal TCP socket server but the assossiated methodes are designed for a typical use case in algotrading. Some of the methodes may not be available in the public repository.
 The connection is TCP and over IPv4.
 
 Note that the commenting is done with absolute begginer's needs in mind.
