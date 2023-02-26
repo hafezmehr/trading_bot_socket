@@ -4,7 +4,7 @@ The connection is TCP and over IPv4.
 Commenting is done with absolute begginer's needs in mind.
 
 ## The Calculation Part ##
-socketserver.py contains a part which should be changed before the usage. As this file was designed for our particular purpose you should remove `pivotBreakStrategy()` and the assossiated `import` and put something instead. Here are some examples:
+`socketserver.py` contains a part which should be changed before the usage. As this file was designed for our particular purpose you should remove `pivotBreakStrategy()` and the assossiated `import` and put something instead. Here are some examples:
 
 ### Recording the data in a .CSV file ###
 Add the following lines to your code to record the recieved data in a .csv file:
