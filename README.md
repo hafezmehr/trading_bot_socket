@@ -5,4 +5,4 @@ The connection is TCP and over IPv4.
 To-Do List:
 - [ ] Commenting
 - [ ] Detailed Documention
-- [ ] requirements.txt
+- [x] requirements.txt
