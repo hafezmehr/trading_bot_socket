@@ -1,6 +1,7 @@
 # Python Socket Server #
 This is a Python socket server which connects to a MetaTrader 5 client.
 The connection is TCP and over IPv4.
+Commenting is done with absolute begginer's needs in mind.
 
 ## The Calculation Part ##
 socketserver.py contains a part which should be changed before the usage. As this file was designed for our particular purpose you should remove `pivotBreakStrategy()` and the assossiated `import` and put something instead. Here are some examples:
