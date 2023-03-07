@@ -40,7 +40,7 @@ class socketserver:
             # Sending the response to the client (in this case the MetaTrader Expert Advisor)
             # In this case we caculate a regressin on the recieved data and send the regression line position data
             # Data is converted from UTF-8 to binary using bytes()
-            self.conn.send(bytes(calc(self.commdata), "utf-8")) # You can remove this line or modify the content if you don't need to send any data back to the client
+            self.conn.send(bytes(rec(self.commdata), "utf-8")) # You can remove this line or modify the content if you don't need to send any data back to the client
             return self.commdata
         
     # Kills the socket server
@@ -50,7 +50,7 @@ class socketserver:
 # pivotBreakStrategy() is the calculation we needed to be performed and send its results back to the client.
 # You can substitue this with any other calculation you desire.
 # Examples are provided in the README.md
-def calc(msg = ''):
+def rec(msg = ''):
     chartdata = np.fromstring(msg, dtype=float, sep= ' ') # Data is seperated by a white space (in client side's code).
     print(chartdata) # prints the clean data
     
